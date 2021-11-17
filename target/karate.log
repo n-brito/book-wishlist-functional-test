@@ -1,0 +1,1675 @@
+10:56:13.291 [main] INFO  com.intuit.karate - karate.env system property was:  
+10:56:15.174 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637157373628","password":"1234"}
+
+10:56:15.351 [main] DEBUG com.intuit.karate - response time in milliseconds: 172.71
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 13:56:15 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e2f0ef600d1","username":"1637157373628","password":"$2a$10$yGwKGNnTqw41rE9NqcxN0OhKjWlyZmmjfaRy4ANahIwchgqcjF7ua","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+10:56:15.355 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$yGwKGNnTqw41rE9NqcxN0OhKjWlyZmmjfaRy4ANahIwchgqcjF7ua",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e2f0ef600d1",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637157373628",
+  "accountNonLocked": true
+}
+
+10:56:15.370 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 46
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637157373628","password":"1234"}
+
+10:56:15.496 [main] DEBUG com.intuit.karate - response time in milliseconds: 123.70
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 13:56:15 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUyZjBlZjYwMGQxIiwiaWF0IjoxNjM3MTU3Mzc1LCJleHAiOjE2MzcyNDM3NzV9.ZGGnJCwT2bU5yH70CiW0jAEGqJ9AnWRwGt7_9S8Hjx4","type":"Bearer"}
+
+10:56:15.497 [main] INFO  com.intuit.karate - [print] {
+  "type": "Bearer",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUyZjBlZjYwMGQxIiwiaWF0IjoxNjM3MTU3Mzc1LCJleHAiOjE2MzcyNDM3NzV9.ZGGnJCwT2bU5yH70CiW0jAEGqJ9AnWRwGt7_9S8Hjx4"
+}
+
+10:56:15.534 [main] INFO  com.intuit.karate - karate.env system property was:  
+10:56:15.551 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637157375547","password":"1234"}
+
+10:56:15.669 [main] DEBUG com.intuit.karate - response time in milliseconds: 116.26
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 13:56:15 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e2f104b00d2","username":"1637157375547","password":"$2a$10$GaITDd3MWfTVP/sLaSsDVuA6kDQv9Une1W3ltYUYo0aAo6qfh01Uu","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+10:56:15.671 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$GaITDd3MWfTVP/sLaSsDVuA6kDQv9Une1W3ltYUYo0aAo6qfh01Uu",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e2f104b00d2",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637157375547",
+  "accountNonLocked": true
+}
+
+10:56:15.674 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 47
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637157375547","password":"12345"}
+
+10:56:15.786 [main] DEBUG com.intuit.karate - response time in milliseconds: 110.59
+2 < 404
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 13:56:15 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[{"field":"username or password","error":"Please check that both the username and password are typed correctly"}]
+
+10:56:15.788 [main] INFO  com.intuit.karate - [print] [
+  {
+    "field": "username or password",
+    "error": "Please check that both the username and password are typed correctly"
+  }
+]
+
+10:56:15.984 [main] INFO  com.intuit.karate - karate.env system property was:  
+10:56:15.999 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637157375990","password":"1234"}
+
+10:56:16.142 [main] DEBUG com.intuit.karate - response time in milliseconds: 142.05
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 13:56:15 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e2f121f00d3","username":"1637157375990","password":"$2a$10$GCq/0uqKE/SUYRpqzhDgoOBTnOpfxpnQYG/uV6IeYLk.1dlX3uLPS","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+10:56:16.144 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$GCq/0uqKE/SUYRpqzhDgoOBTnOpfxpnQYG/uV6IeYLk.1dlX3uLPS",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e2f121f00d3",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637157375990",
+  "accountNonLocked": true
+}
+
+10:56:16.149 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 46
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637157375990","password":"1234"}
+
+10:56:16.265 [main] DEBUG com.intuit.karate - response time in milliseconds: 113.42
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 13:56:15 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUyZjEyMWYwMGQzIiwiaWF0IjoxNjM3MTU3Mzc2LCJleHAiOjE2MzcyNDM3NzZ9.yTVZzcUvTD5oHKTVgDZrBn0ikLvbVV1pZJ3EnIXuq6A","type":"Bearer"}
+
+10:56:16.266 [main] INFO  com.intuit.karate - [print] {
+  "type": "Bearer",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUyZjEyMWYwMGQzIiwiaWF0IjoxNjM3MTU3Mzc2LCJleHAiOjE2MzcyNDM3NzZ9.yTVZzcUvTD5oHKTVgDZrBn0ikLvbVV1pZJ3EnIXuq6A"
+}
+
+10:56:16.308 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:8081/wishlist
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUyZjEyMWYwMGQzIiwiaWF0IjoxNjM3MTU3Mzc2LCJleHAiOjE2MzcyNDM3NzZ9.yTVZzcUvTD5oHKTVgDZrBn0ikLvbVV1pZJ3EnIXuq6A
+3 > Connection: Keep-Alive
+3 > Content-Length: 33
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:8081
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"name":"wishlist for testing 2"}
+
+10:56:16.356 [main] DEBUG com.intuit.karate - response time in milliseconds: 46.94
+3 < 201
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Connection: keep-alive
+3 < Content-Type: application/json
+3 < Date: Wed, 17 Nov 2021 13:56:16 GMT
+3 < Expires: 0
+3 < Keep-Alive: timeout=60
+3 < Location: http://localhost:8081/wishlist/2c9480837d2a8c08017d2e2f12ef00d4
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e2f12ef00d4","name":"wishlist for testing 2","books":[]}
+
+10:56:16.357 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+  ],
+  "name": "wishlist for testing 2",
+  "id": "2c9480837d2a8c08017d2e2f12ef00d4"
+}
+
+10:56:16.392 [main] DEBUG com.intuit.karate - request:
+4 > POST http://localhost:8081/wishlist/2c9480837d2a8c08017d2e2f12ef00d4/book/9780672337949
+4 > Accept-Encoding: gzip,deflate
+4 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUyZjEyMWYwMGQzIiwiaWF0IjoxNjM3MTU3Mzc2LCJleHAiOjE2MzcyNDM3NzZ9.yTVZzcUvTD5oHKTVgDZrBn0ikLvbVV1pZJ3EnIXuq6A
+4 > Connection: Keep-Alive
+4 > Content-Length: 74
+4 > Content-Type: application/json; charset=UTF-8
+4 > Host: localhost:8081
+4 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"isbn13":"9780672337949","wishlistId":"2c9480837d2a8c08017d2e2f12ef00d4"}
+
+10:56:19.223 [main] DEBUG com.intuit.karate - response time in milliseconds: 2829.62
+4 < 201
+4 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 < Connection: keep-alive
+4 < Content-Type: application/json
+4 < Date: Wed, 17 Nov 2021 13:56:19 GMT
+4 < Expires: 0
+4 < Keep-Alive: timeout=60
+4 < Location: http://localhost:8081/2c9480837d2a8c08017d2e2f12ef00d4/book/9780672337949
+4 < Pragma: no-cache
+4 < Transfer-Encoding: chunked
+4 < X-Content-Type-Options: nosniff
+4 < X-Frame-Options: DENY
+4 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e2f12ef00d4","name":"wishlist for testing 2","books":[{"id":"2c9480837d2a8c08017d2e2f1e1d00d5","isbn13":"9780672337949","title":"Sams Teach Yourself Java in 24 Hours, 8th Edition","subtitle":"Covering Java 9","authors":"Rogers Cadenhead","year":"2017","price":"$17.79","url":"https://api.itbook.store/1.0/books/9780672337949"}]}
+
+10:56:19.225 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+    {
+      "year": "2017",
+      "price": "$17.79",
+      "isbn13": "9780672337949",
+      "subtitle": "Covering Java 9",
+      "id": "2c9480837d2a8c08017d2e2f1e1d00d5",
+      "title": "Sams Teach Yourself Java in 24 Hours, 8th Edition",
+      "url": "https://api.itbook.store/1.0/books/9780672337949",
+      "authors": "Rogers Cadenhead"
+    }
+  ],
+  "name": "wishlist for testing 2",
+  "id": "2c9480837d2a8c08017d2e2f12ef00d4"
+}
+
+10:56:19.229 [main] ERROR com.intuit.karate - assertion failed: path: $.books[*], actual: [{"year":"2017","price":"$17.79","isbn13":"9780672337949","subtitle":"Covering Java 9","id":"2c9480837d2a8c08017d2e2f1e1d00d5","title":"Sams Teach Yourself Java in 24 Hours, 8th Edition","url":"https:\/\/api.itbook.store\/1.0\/books\/9780672337949","authors":"Rogers Cadenhead"}], expected: '9780672337949', reason: actual value does not contain expected
+10:56:19.301 [main] INFO  com.intuit.karate - karate.env system property was:  
+10:56:19.308 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 41
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"Testando","password":"1234"}
+
+10:56:19.471 [main] DEBUG com.intuit.karate - response time in milliseconds: 161.98
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 13:56:19 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e2f1f1a00d6","username":"Testando","password":"$2a$10$2SoAQMKRJiEtu7GY5t2Nue.VZD5zP/fYCTD1hzDj7.0Nkac1lH1b2","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+10:56:19.471 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$2SoAQMKRJiEtu7GY5t2Nue.VZD5zP/fYCTD1hzDj7.0Nkac1lH1b2",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e2f1f1a00d6",
+  "enabled": true,
+  "authorities": null,
+  "username": "Testando",
+  "accountNonLocked": true
+}
+
+10:56:19.490 [main] INFO  com.intuit.karate - karate.env system property was:  
+10:56:19.494 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 33
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"","password":"1234"}
+
+10:56:19.506 [main] DEBUG com.intuit.karate - response time in milliseconds: 10.02
+1 < 400
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 13:56:19 GMT
+1 < Transfer-Encoding: chunked
+[{"field":"username","error":"Username must be between 4 to 15 characters and not be blank"},{"field":"username","error":"size must be between 4 and 15"}]
+
+10:56:19.507 [main] INFO  com.intuit.karate - [print] [
+  {
+    "field": "username",
+    "error": "Username must be between 4 to 15 characters and not be blank"
+  },
+  {
+    "field": "username",
+    "error": "size must be between 4 and 15"
+  }
+]
+
+10:56:19.530 [main] INFO  com.intuit.karate - karate.env system property was:  
+10:56:19.539 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 37
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"Testando","password":""}
+
+10:56:19.557 [main] DEBUG com.intuit.karate - response time in milliseconds: 14.83
+1 < 400
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 13:56:19 GMT
+1 < Transfer-Encoding: chunked
+[{"field":"password","error":"Password must be between 4 to 15 characters and not be blank"},{"field":"password","error":"size must be between 4 and 15"}]
+
+10:56:19.558 [main] INFO  com.intuit.karate - [print] [
+  {
+    "field": "password",
+    "error": "Password must be between 4 to 15 characters and not be blank"
+  },
+  {
+    "field": "password",
+    "error": "size must be between 4 and 15"
+  }
+]
+
+10:56:19.650 [main] INFO  com.intuit.karate - karate.env system property was:  
+10:56:19.660 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637157379655","password":"1234"}
+
+10:56:19.848 [main] DEBUG com.intuit.karate - response time in milliseconds: 185.66
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 13:56:19 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e2f207100d7","username":"1637157379655","password":"$2a$10$tEXVCnHiYgVP6wX9a0Mi8.POixRZhJ/tJ0FU34ET9l3Okgp7CxQgi","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+10:56:19.849 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$tEXVCnHiYgVP6wX9a0Mi8.POixRZhJ/tJ0FU34ET9l3Okgp7CxQgi",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e2f207100d7",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637157379655",
+  "accountNonLocked": true
+}
+
+10:56:19.855 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 46
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637157379655","password":"1234"}
+
+10:56:19.991 [main] DEBUG com.intuit.karate - response time in milliseconds: 134.49
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 13:56:19 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUyZjIwNzEwMGQ3IiwiaWF0IjoxNjM3MTU3MzgwLCJleHAiOjE2MzcyNDM3ODB9.g3dJNgLJes0f9-Y1Yloo1bn7xpCRORH2eutF3t06NHc","type":"Bearer"}
+
+10:56:19.992 [main] INFO  com.intuit.karate - [print] {
+  "type": "Bearer",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUyZjIwNzEwMGQ3IiwiaWF0IjoxNjM3MTU3MzgwLCJleHAiOjE2MzcyNDM3ODB9.g3dJNgLJes0f9-Y1Yloo1bn7xpCRORH2eutF3t06NHc"
+}
+
+10:56:19.997 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:8081/wishlist
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUyZjIwNzEwMGQ3IiwiaWF0IjoxNjM3MTU3MzgwLCJleHAiOjE2MzcyNDM3ODB9.g3dJNgLJes0f9-Y1Yloo1bn7xpCRORH2eutF3t06NHc
+3 > Connection: Keep-Alive
+3 > Content-Length: 31
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:8081
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"name":"wishlist for testing"}
+
+10:56:20.050 [main] DEBUG com.intuit.karate - response time in milliseconds: 52.16
+3 < 201
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Connection: keep-alive
+3 < Content-Type: application/json
+3 < Date: Wed, 17 Nov 2021 13:56:19 GMT
+3 < Expires: 0
+3 < Keep-Alive: timeout=60
+3 < Location: http://localhost:8081/wishlist/2c9480837d2a8c08017d2e2f215c00d8
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e2f215c00d8","name":"wishlist for testing","books":[]}
+
+10:56:20.053 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+  ],
+  "name": "wishlist for testing",
+  "id": "2c9480837d2a8c08017d2e2f215c00d8"
+}
+
+10:56:20.110 [main] INFO  com.intuit.karate - karate.env system property was:  
+10:56:20.125 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637157380119","password":"1234"}
+
+10:56:20.290 [main] DEBUG com.intuit.karate - response time in milliseconds: 162.97
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 13:56:20 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e2f223600d9","username":"1637157380119","password":"$2a$10$aKcAXIaj8KlzjDGeyJMDf.ZCkZ6tHs3VEqWEedGTj5ottr9YhO.UW","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+10:56:20.291 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$aKcAXIaj8KlzjDGeyJMDf.ZCkZ6tHs3VEqWEedGTj5ottr9YhO.UW",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e2f223600d9",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637157380119",
+  "accountNonLocked": true
+}
+
+10:56:20.297 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 46
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637157380119","password":"1234"}
+
+10:56:20.453 [main] DEBUG com.intuit.karate - response time in milliseconds: 153.22
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 13:56:20 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUyZjIyMzYwMGQ5IiwiaWF0IjoxNjM3MTU3MzgwLCJleHAiOjE2MzcyNDM3ODB9.JqZN47NzAAJg0MB9fHGBdj0OleYksBDtaL8ja0ewbDA","type":"Bearer"}
+
+10:56:20.455 [main] INFO  com.intuit.karate - [print] {
+  "type": "Bearer",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUyZjIyMzYwMGQ5IiwiaWF0IjoxNjM3MTU3MzgwLCJleHAiOjE2MzcyNDM3ODB9.JqZN47NzAAJg0MB9fHGBdj0OleYksBDtaL8ja0ewbDA"
+}
+
+10:56:20.461 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:8081/wishlist
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUyZjIyMzYwMGQ5IiwiaWF0IjoxNjM3MTU3MzgwLCJleHAiOjE2MzcyNDM3ODB9.JqZN47NzAAJg0MB9fHGBdj0OleYksBDtaL8ja0ewbDA
+3 > Connection: Keep-Alive
+3 > Content-Length: 27
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:8081
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"name":"wishlist to find"}
+
+10:56:20.513 [main] DEBUG com.intuit.karate - response time in milliseconds: 50.78
+3 < 201
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Connection: keep-alive
+3 < Content-Type: application/json
+3 < Date: Wed, 17 Nov 2021 13:56:20 GMT
+3 < Expires: 0
+3 < Keep-Alive: timeout=60
+3 < Location: http://localhost:8081/wishlist/2c9480837d2a8c08017d2e2f232d00da
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e2f232d00da","name":"wishlist to find","books":[]}
+
+10:56:20.514 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+  ],
+  "name": "wishlist to find",
+  "id": "2c9480837d2a8c08017d2e2f232d00da"
+}
+
+10:56:20.528 [main] DEBUG com.intuit.karate - request:
+4 > GET http://localhost:8081/wishlist/2c9480837d2a8c08017d2e2f232d00da
+4 > Accept-Encoding: gzip,deflate
+4 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUyZjIyMzYwMGQ5IiwiaWF0IjoxNjM3MTU3MzgwLCJleHAiOjE2MzcyNDM3ODB9.JqZN47NzAAJg0MB9fHGBdj0OleYksBDtaL8ja0ewbDA
+4 > Connection: Keep-Alive
+4 > Host: localhost:8081
+4 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+
+10:56:20.554 [main] DEBUG com.intuit.karate - response time in milliseconds: 24.75
+4 < 200
+4 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 < Connection: keep-alive
+4 < Content-Type: application/json
+4 < Date: Wed, 17 Nov 2021 13:56:20 GMT
+4 < Expires: 0
+4 < Keep-Alive: timeout=60
+4 < Pragma: no-cache
+4 < Transfer-Encoding: chunked
+4 < X-Content-Type-Options: nosniff
+4 < X-Frame-Options: DENY
+4 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e2f232d00da","name":"wishlist to find","books":[]}
+
+10:56:20.555 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+  ],
+  "name": "wishlist to find",
+  "id": "2c9480837d2a8c08017d2e2f232d00da"
+}
+
+11:12:48.533 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:12:49.820 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158368733","password":"1234"}
+
+11:12:50.017 [main] DEBUG com.intuit.karate - response time in milliseconds: 192.34
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:12:50 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e3e3c4900db","username":"1637158368733","password":"$2a$10$sb/9gDHAMedLBoBrnw1zJO9ok260AK5R9y8vBOJ0Hz2cMwOpphTK6","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+11:12:50.020 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$sb/9gDHAMedLBoBrnw1zJO9ok260AK5R9y8vBOJ0Hz2cMwOpphTK6",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e3e3c4900db",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637158368733",
+  "accountNonLocked": true
+}
+
+11:12:50.043 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 46
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158368733","password":"1234"}
+
+11:12:50.193 [main] DEBUG com.intuit.karate - response time in milliseconds: 145.55
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 14:12:50 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUzZTNjNDkwMGRiIiwiaWF0IjoxNjM3MTU4MzcwLCJleHAiOjE2MzcyNDQ3NzB9.UICyEOvDOXd2j4RNIw4VVWQGfZE9xvMsynczQv27T9U","type":"Bearer"}
+
+11:12:50.195 [main] INFO  com.intuit.karate - [print] {
+  "type": "Bearer",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUzZTNjNDkwMGRiIiwiaWF0IjoxNjM3MTU4MzcwLCJleHAiOjE2MzcyNDQ3NzB9.UICyEOvDOXd2j4RNIw4VVWQGfZE9xvMsynczQv27T9U"
+}
+
+11:12:50.235 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:12:50.255 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158370247","password":"1234"}
+
+11:12:50.401 [main] DEBUG com.intuit.karate - response time in milliseconds: 145.36
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:12:50 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e3e3de600dc","username":"1637158370247","password":"$2a$10$a2qOUPn/RHt4oGy4pzxvluXSDSc5eq3v3K0UHncpOVfjNQMeznKEq","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+11:12:50.402 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$a2qOUPn/RHt4oGy4pzxvluXSDSc5eq3v3K0UHncpOVfjNQMeznKEq",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e3e3de600dc",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637158370247",
+  "accountNonLocked": true
+}
+
+11:12:50.407 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 47
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158370247","password":"12345"}
+
+11:12:50.574 [main] DEBUG com.intuit.karate - response time in milliseconds: 165.91
+2 < 404
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 14:12:50 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[{"field":"username or password","error":"Please check that both the username and password are typed correctly"}]
+
+11:12:50.575 [main] INFO  com.intuit.karate - [print] [
+  {
+    "field": "username or password",
+    "error": "Please check that both the username and password are typed correctly"
+  }
+]
+
+11:12:50.878 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:12:50.898 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158370883","password":"1234"}
+
+11:12:51.085 [main] DEBUG com.intuit.karate - response time in milliseconds: 185.76
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:12:51 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e3e408a00dd","username":"1637158370883","password":"$2a$10$ztF7iuMxlrmDp27RvTKV6uyYYHoVmwyycS5Ydd9KnK.UjWrtSqyDe","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+11:12:51.088 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$ztF7iuMxlrmDp27RvTKV6uyYYHoVmwyycS5Ydd9KnK.UjWrtSqyDe",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e3e408a00dd",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637158370883",
+  "accountNonLocked": true
+}
+
+11:12:51.093 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 46
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158370883","password":"1234"}
+
+11:12:51.214 [main] DEBUG com.intuit.karate - response time in milliseconds: 118.05
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 14:12:51 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUzZTQwOGEwMGRkIiwiaWF0IjoxNjM3MTU4MzcxLCJleHAiOjE2MzcyNDQ3NzF9.VsHAdDXUYRBwGjYZ6kPvNQVs5OUqAfOxoV7b8_kr7fs","type":"Bearer"}
+
+11:12:51.214 [main] INFO  com.intuit.karate - [print] {
+  "type": "Bearer",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUzZTQwOGEwMGRkIiwiaWF0IjoxNjM3MTU4MzcxLCJleHAiOjE2MzcyNDQ3NzF9.VsHAdDXUYRBwGjYZ6kPvNQVs5OUqAfOxoV7b8_kr7fs"
+}
+
+11:12:51.248 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:8081/wishlist
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUzZTQwOGEwMGRkIiwiaWF0IjoxNjM3MTU4MzcxLCJleHAiOjE2MzcyNDQ3NzF9.VsHAdDXUYRBwGjYZ6kPvNQVs5OUqAfOxoV7b8_kr7fs
+3 > Connection: Keep-Alive
+3 > Content-Length: 33
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:8081
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"name":"wishlist for testing 2"}
+
+11:12:51.311 [main] DEBUG com.intuit.karate - response time in milliseconds: 61.87
+3 < 201
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Connection: keep-alive
+3 < Content-Type: application/json
+3 < Date: Wed, 17 Nov 2021 14:12:51 GMT
+3 < Expires: 0
+3 < Keep-Alive: timeout=60
+3 < Location: http://localhost:8081/wishlist/2c9480837d2a8c08017d2e3e416c00de
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e3e416c00de","name":"wishlist for testing 2","books":[]}
+
+11:12:51.312 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+  ],
+  "name": "wishlist for testing 2",
+  "id": "2c9480837d2a8c08017d2e3e416c00de"
+}
+
+11:12:51.359 [main] DEBUG com.intuit.karate - request:
+4 > POST http://localhost:8081/wishlist/2c9480837d2a8c08017d2e3e416c00de/book/9780672337949
+4 > Accept-Encoding: gzip,deflate
+4 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUzZTQwOGEwMGRkIiwiaWF0IjoxNjM3MTU4MzcxLCJleHAiOjE2MzcyNDQ3NzF9.VsHAdDXUYRBwGjYZ6kPvNQVs5OUqAfOxoV7b8_kr7fs
+4 > Connection: Keep-Alive
+4 > Content-Length: 74
+4 > Content-Type: application/json; charset=UTF-8
+4 > Host: localhost:8081
+4 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"isbn13":"9780672337949","wishlistId":"2c9480837d2a8c08017d2e3e416c00de"}
+
+11:12:54.273 [main] DEBUG com.intuit.karate - response time in milliseconds: 2913.26
+4 < 201
+4 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 < Connection: keep-alive
+4 < Content-Type: application/json
+4 < Date: Wed, 17 Nov 2021 14:12:54 GMT
+4 < Expires: 0
+4 < Keep-Alive: timeout=60
+4 < Location: http://localhost:8081/2c9480837d2a8c08017d2e3e416c00de/book/9780672337949
+4 < Pragma: no-cache
+4 < Transfer-Encoding: chunked
+4 < X-Content-Type-Options: nosniff
+4 < X-Frame-Options: DENY
+4 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e3e416c00de","name":"wishlist for testing 2","books":[{"id":"2c9480837d2a8c08017d2e3e4cfd00df","isbn13":"9780672337949","title":"Sams Teach Yourself Java in 24 Hours, 8th Edition","subtitle":"Covering Java 9","authors":"Rogers Cadenhead","year":"2017","price":"$17.79","url":"https://api.itbook.store/1.0/books/9780672337949"}]}
+
+11:12:54.277 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+    {
+      "year": "2017",
+      "price": "$17.79",
+      "isbn13": "9780672337949",
+      "subtitle": "Covering Java 9",
+      "id": "2c9480837d2a8c08017d2e3e4cfd00df",
+      "title": "Sams Teach Yourself Java in 24 Hours, 8th Edition",
+      "url": "https://api.itbook.store/1.0/books/9780672337949",
+      "authors": "Rogers Cadenhead"
+    }
+  ],
+  "name": "wishlist for testing 2",
+  "id": "2c9480837d2a8c08017d2e3e416c00de"
+}
+
+11:12:54.378 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:12:54.383 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 41
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"Testando","password":"1234"}
+
+11:12:54.535 [main] DEBUG com.intuit.karate - response time in milliseconds: 150.71
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:12:54 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e3e4e0b00e0","username":"Testando","password":"$2a$10$II4YVSk0lI8iuTxExsr2HOqhEFX3wW3/kvRctdKN5DPs202xeS1Mq","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+11:12:54.536 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$II4YVSk0lI8iuTxExsr2HOqhEFX3wW3/kvRctdKN5DPs202xeS1Mq",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e3e4e0b00e0",
+  "enabled": true,
+  "authorities": null,
+  "username": "Testando",
+  "accountNonLocked": true
+}
+
+11:12:54.561 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:12:54.565 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 33
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"","password":"1234"}
+
+11:12:54.585 [main] DEBUG com.intuit.karate - response time in milliseconds: 18.14
+1 < 400
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:12:54 GMT
+1 < Transfer-Encoding: chunked
+[{"field":"username","error":"size must be between 4 and 15"},{"field":"username","error":"Username must be between 4 to 15 characters and not be blank"}]
+
+11:12:54.586 [main] INFO  com.intuit.karate - [print] [
+  {
+    "field": "username",
+    "error": "size must be between 4 and 15"
+  },
+  {
+    "field": "username",
+    "error": "Username must be between 4 to 15 characters and not be blank"
+  }
+]
+
+11:12:54.607 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:12:54.611 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 37
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"Testando","password":""}
+
+11:12:54.622 [main] DEBUG com.intuit.karate - response time in milliseconds: 9.36
+1 < 400
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:12:54 GMT
+1 < Transfer-Encoding: chunked
+[{"field":"password","error":"Password must be between 4 to 15 characters and not be blank"},{"field":"password","error":"size must be between 4 and 15"}]
+
+11:12:54.625 [main] INFO  com.intuit.karate - [print] [
+  {
+    "field": "password",
+    "error": "Password must be between 4 to 15 characters and not be blank"
+  },
+  {
+    "field": "password",
+    "error": "size must be between 4 and 15"
+  }
+]
+
+11:12:54.676 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:12:54.685 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158374681","password":"1234"}
+
+11:12:54.818 [main] DEBUG com.intuit.karate - response time in milliseconds: 133.07
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:12:54 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e3e4f2f00e1","username":"1637158374681","password":"$2a$10$r7Y0hIIRA4Ph3/0RUVjMZe.TzCaPjNGvuBSf2cTQoFS4mtwXXKe52","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+11:12:54.820 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$r7Y0hIIRA4Ph3/0RUVjMZe.TzCaPjNGvuBSf2cTQoFS4mtwXXKe52",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e3e4f2f00e1",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637158374681",
+  "accountNonLocked": true
+}
+
+11:12:54.825 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 46
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158374681","password":"1234"}
+
+11:12:54.942 [main] DEBUG com.intuit.karate - response time in milliseconds: 114.90
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 14:12:54 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUzZTRmMmYwMGUxIiwiaWF0IjoxNjM3MTU4Mzc1LCJleHAiOjE2MzcyNDQ3NzV9.gQDGdRQwuzGQQxXuq029m-j8dAHhL8miy5iT9KYDQ3E","type":"Bearer"}
+
+11:12:54.943 [main] INFO  com.intuit.karate - [print] {
+  "type": "Bearer",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUzZTRmMmYwMGUxIiwiaWF0IjoxNjM3MTU4Mzc1LCJleHAiOjE2MzcyNDQ3NzV9.gQDGdRQwuzGQQxXuq029m-j8dAHhL8miy5iT9KYDQ3E"
+}
+
+11:12:54.949 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:8081/wishlist
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUzZTRmMmYwMGUxIiwiaWF0IjoxNjM3MTU4Mzc1LCJleHAiOjE2MzcyNDQ3NzV9.gQDGdRQwuzGQQxXuq029m-j8dAHhL8miy5iT9KYDQ3E
+3 > Connection: Keep-Alive
+3 > Content-Length: 31
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:8081
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"name":"wishlist for testing"}
+
+11:12:54.995 [main] DEBUG com.intuit.karate - response time in milliseconds: 44.86
+3 < 201
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Connection: keep-alive
+3 < Content-Type: application/json
+3 < Date: Wed, 17 Nov 2021 14:12:54 GMT
+3 < Expires: 0
+3 < Keep-Alive: timeout=60
+3 < Location: http://localhost:8081/wishlist/2c9480837d2a8c08017d2e3e4fdf00e2
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e3e4fdf00e2","name":"wishlist for testing","books":[]}
+
+11:12:54.996 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+  ],
+  "name": "wishlist for testing",
+  "id": "2c9480837d2a8c08017d2e3e4fdf00e2"
+}
+
+11:12:55.043 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:12:55.053 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158375047","password":"1234"}
+
+11:12:55.176 [main] DEBUG com.intuit.karate - response time in milliseconds: 121.45
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:12:54 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e3e509800e3","username":"1637158375047","password":"$2a$10$fZQOfhQuvzeq5726eyenEOFdA2FNbEEZ/5uLL/VKL4F/p9ylFmvBy","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+11:12:55.177 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$fZQOfhQuvzeq5726eyenEOFdA2FNbEEZ/5uLL/VKL4F/p9ylFmvBy",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e3e509800e3",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637158375047",
+  "accountNonLocked": true
+}
+
+11:12:55.185 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 46
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158375047","password":"1234"}
+
+11:12:55.308 [main] DEBUG com.intuit.karate - response time in milliseconds: 120.23
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 14:12:55 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUzZTUwOTgwMGUzIiwiaWF0IjoxNjM3MTU4Mzc1LCJleHAiOjE2MzcyNDQ3NzV9.1rJeNr75AnIyqe4WaMQtrqIBqREG0BFHpco72ztJ2BA","type":"Bearer"}
+
+11:12:55.310 [main] INFO  com.intuit.karate - [print] {
+  "type": "Bearer",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUzZTUwOTgwMGUzIiwiaWF0IjoxNjM3MTU4Mzc1LCJleHAiOjE2MzcyNDQ3NzV9.1rJeNr75AnIyqe4WaMQtrqIBqREG0BFHpco72ztJ2BA"
+}
+
+11:12:55.315 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:8081/wishlist
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUzZTUwOTgwMGUzIiwiaWF0IjoxNjM3MTU4Mzc1LCJleHAiOjE2MzcyNDQ3NzV9.1rJeNr75AnIyqe4WaMQtrqIBqREG0BFHpco72ztJ2BA
+3 > Connection: Keep-Alive
+3 > Content-Length: 27
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:8081
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"name":"wishlist to find"}
+
+11:12:55.369 [main] DEBUG com.intuit.karate - response time in milliseconds: 52.95
+3 < 201
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Connection: keep-alive
+3 < Content-Type: application/json
+3 < Date: Wed, 17 Nov 2021 14:12:55 GMT
+3 < Expires: 0
+3 < Keep-Alive: timeout=60
+3 < Location: http://localhost:8081/wishlist/2c9480837d2a8c08017d2e3e514c00e4
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e3e514c00e4","name":"wishlist to find","books":[]}
+
+11:12:55.369 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+  ],
+  "name": "wishlist to find",
+  "id": "2c9480837d2a8c08017d2e3e514c00e4"
+}
+
+11:12:55.385 [main] DEBUG com.intuit.karate - request:
+4 > GET http://localhost:8081/wishlist/2c9480837d2a8c08017d2e3e514c00e4
+4 > Accept-Encoding: gzip,deflate
+4 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmUzZTUwOTgwMGUzIiwiaWF0IjoxNjM3MTU4Mzc1LCJleHAiOjE2MzcyNDQ3NzV9.1rJeNr75AnIyqe4WaMQtrqIBqREG0BFHpco72ztJ2BA
+4 > Connection: Keep-Alive
+4 > Host: localhost:8081
+4 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+
+11:12:55.417 [main] DEBUG com.intuit.karate - response time in milliseconds: 31.52
+4 < 200
+4 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 < Connection: keep-alive
+4 < Content-Type: application/json
+4 < Date: Wed, 17 Nov 2021 14:12:55 GMT
+4 < Expires: 0
+4 < Keep-Alive: timeout=60
+4 < Pragma: no-cache
+4 < Transfer-Encoding: chunked
+4 < X-Content-Type-Options: nosniff
+4 < X-Frame-Options: DENY
+4 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e3e514c00e4","name":"wishlist to find","books":[]}
+
+11:12:55.419 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+  ],
+  "name": "wishlist to find",
+  "id": "2c9480837d2a8c08017d2e3e514c00e4"
+}
+
+11:22:13.138 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:22:14.373 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158933344","password":"1234"}
+
+11:22:14.559 [main] DEBUG com.intuit.karate - response time in milliseconds: 182.26
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:22:14 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e46d99800e5","username":"1637158933344","password":"$2a$10$8a388jbXcpi7fE7KecHXz.f61Q58ghQWjmn1DUzVYfYVhDYFdyGfa","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+11:22:14.561 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$8a388jbXcpi7fE7KecHXz.f61Q58ghQWjmn1DUzVYfYVhDYFdyGfa",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e46d99800e5",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637158933344",
+  "accountNonLocked": true
+}
+
+11:22:14.577 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 46
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158933344","password":"1234"}
+
+11:22:14.701 [main] DEBUG com.intuit.karate - response time in milliseconds: 122.42
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 14:22:14 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmQ5OTgwMGU1IiwiaWF0IjoxNjM3MTU4OTM1LCJleHAiOjE2MzcyNDUzMzV9.iXLbSleF0Y4o8JoHWSof8hi7bhVHZOLbT4HPR86D1Gk","type":"Bearer"}
+
+11:22:14.703 [main] INFO  com.intuit.karate - [print] {
+  "type": "Bearer",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmQ5OTgwMGU1IiwiaWF0IjoxNjM3MTU4OTM1LCJleHAiOjE2MzcyNDUzMzV9.iXLbSleF0Y4o8JoHWSof8hi7bhVHZOLbT4HPR86D1Gk"
+}
+
+11:22:14.743 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:22:14.759 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158934754","password":"1234"}
+
+11:22:14.885 [main] DEBUG com.intuit.karate - response time in milliseconds: 124.27
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:22:14 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e46daed00e6","username":"1637158934754","password":"$2a$10$DHoKjGY8ogIMjScGufjQ0uqFbGq.h0TrGukkP6D0KgLShG73vqzlG","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+11:22:14.886 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$DHoKjGY8ogIMjScGufjQ0uqFbGq.h0TrGukkP6D0KgLShG73vqzlG",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e46daed00e6",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637158934754",
+  "accountNonLocked": true
+}
+
+11:22:14.889 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 47
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158934754","password":"12345"}
+
+11:22:15.002 [main] DEBUG com.intuit.karate - response time in milliseconds: 111.47
+2 < 404
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 14:22:14 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+[{"field":"username or password","error":"Please check that both the username and password are typed correctly"}]
+
+11:22:15.004 [main] INFO  com.intuit.karate - [print] [
+  {
+    "field": "username or password",
+    "error": "Please check that both the username and password are typed correctly"
+  }
+]
+
+11:22:15.186 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:22:15.205 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158935191","password":"1234"}
+
+11:22:15.340 [main] DEBUG com.intuit.karate - response time in milliseconds: 133.69
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:22:14 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e46dcb900e7","username":"1637158935191","password":"$2a$10$ls.jQWSieKvt93e4wNFcNOaBYY6IF7btR0ZThj5PJF76Mfx3oKFqu","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+11:22:15.343 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$ls.jQWSieKvt93e4wNFcNOaBYY6IF7btR0ZThj5PJF76Mfx3oKFqu",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e46dcb900e7",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637158935191",
+  "accountNonLocked": true
+}
+
+11:22:15.348 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 46
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158935191","password":"1234"}
+
+11:22:15.459 [main] DEBUG com.intuit.karate - response time in milliseconds: 110.91
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 14:22:14 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmRjYjkwMGU3IiwiaWF0IjoxNjM3MTU4OTM1LCJleHAiOjE2MzcyNDUzMzV9.Q070fmpXHTPZSs_eWxUEyWp-4Y7cSWb2myaTfPja6eU","type":"Bearer"}
+
+11:22:15.460 [main] INFO  com.intuit.karate - [print] {
+  "type": "Bearer",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmRjYjkwMGU3IiwiaWF0IjoxNjM3MTU4OTM1LCJleHAiOjE2MzcyNDUzMzV9.Q070fmpXHTPZSs_eWxUEyWp-4Y7cSWb2myaTfPja6eU"
+}
+
+11:22:15.488 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:8081/wishlist
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmRjYjkwMGU3IiwiaWF0IjoxNjM3MTU4OTM1LCJleHAiOjE2MzcyNDUzMzV9.Q070fmpXHTPZSs_eWxUEyWp-4Y7cSWb2myaTfPja6eU
+3 > Connection: Keep-Alive
+3 > Content-Length: 33
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:8081
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"name":"wishlist for testing 2"}
+
+11:22:15.562 [main] DEBUG com.intuit.karate - response time in milliseconds: 72.90
+3 < 201
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Connection: keep-alive
+3 < Content-Type: application/json
+3 < Date: Wed, 17 Nov 2021 14:22:15 GMT
+3 < Expires: 0
+3 < Keep-Alive: timeout=60
+3 < Location: http://localhost:8081/wishlist/2c9480837d2a8c08017d2e46dd7e00e8
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e46dd7e00e8","name":"wishlist for testing 2","books":[]}
+
+11:22:15.563 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+  ],
+  "name": "wishlist for testing 2",
+  "id": "2c9480837d2a8c08017d2e46dd7e00e8"
+}
+
+11:22:15.619 [main] DEBUG com.intuit.karate - request:
+4 > POST http://localhost:8081/wishlist/2c9480837d2a8c08017d2e46dd7e00e8/book/9780672337949
+4 > Accept-Encoding: gzip,deflate
+4 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmRjYjkwMGU3IiwiaWF0IjoxNjM3MTU4OTM1LCJleHAiOjE2MzcyNDUzMzV9.Q070fmpXHTPZSs_eWxUEyWp-4Y7cSWb2myaTfPja6eU
+4 > Connection: Keep-Alive
+4 > Content-Length: 74
+4 > Content-Type: application/json; charset=UTF-8
+4 > Host: localhost:8081
+4 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"isbn13":"9780672337949","wishlistId":"2c9480837d2a8c08017d2e46dd7e00e8"}
+
+11:22:18.343 [main] DEBUG com.intuit.karate - response time in milliseconds: 2719.61
+4 < 201
+4 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 < Connection: keep-alive
+4 < Content-Type: application/json
+4 < Date: Wed, 17 Nov 2021 14:22:18 GMT
+4 < Expires: 0
+4 < Keep-Alive: timeout=60
+4 < Location: http://localhost:8081/2c9480837d2a8c08017d2e46dd7e00e8/book/9780672337949
+4 < Pragma: no-cache
+4 < Transfer-Encoding: chunked
+4 < X-Content-Type-Options: nosniff
+4 < X-Frame-Options: DENY
+4 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e46dd7e00e8","name":"wishlist for testing 2","books":[{"id":"2c9480837d2a8c08017d2e46e82f00e9","isbn13":"9780672337949","title":"Sams Teach Yourself Java in 24 Hours, 8th Edition","subtitle":"Covering Java 9","authors":"Rogers Cadenhead","year":"2017","price":"$17.79","url":"https://api.itbook.store/1.0/books/9780672337949"}]}
+
+11:22:18.345 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+    {
+      "year": "2017",
+      "price": "$17.79",
+      "isbn13": "9780672337949",
+      "subtitle": "Covering Java 9",
+      "id": "2c9480837d2a8c08017d2e46e82f00e9",
+      "title": "Sams Teach Yourself Java in 24 Hours, 8th Edition",
+      "url": "https://api.itbook.store/1.0/books/9780672337949",
+      "authors": "Rogers Cadenhead"
+    }
+  ],
+  "name": "wishlist for testing 2",
+  "id": "2c9480837d2a8c08017d2e46dd7e00e8"
+}
+
+11:22:18.460 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:22:18.468 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 41
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"Testando","password":"1234"}
+
+11:22:18.617 [main] DEBUG com.intuit.karate - response time in milliseconds: 147.87
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:22:18 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e46e97800ea","username":"Testando","password":"$2a$10$FsznI294WCQR/HLnaBzPH.KqMlwPaG1tuwbi/Rbly6R9g51RY33Vy","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+11:22:18.619 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$FsznI294WCQR/HLnaBzPH.KqMlwPaG1tuwbi/Rbly6R9g51RY33Vy",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e46e97800ea",
+  "enabled": true,
+  "authorities": null,
+  "username": "Testando",
+  "accountNonLocked": true
+}
+
+11:22:18.648 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:22:18.654 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 33
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"","password":"1234"}
+
+11:22:18.670 [main] DEBUG com.intuit.karate - response time in milliseconds: 14.88
+1 < 400
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:22:18 GMT
+1 < Transfer-Encoding: chunked
+[{"field":"username","error":"size must be between 4 and 15"},{"field":"username","error":"Username must be between 4 to 15 characters and not be blank"}]
+
+11:22:18.672 [main] INFO  com.intuit.karate - [print] [
+  {
+    "field": "username",
+    "error": "size must be between 4 and 15"
+  },
+  {
+    "field": "username",
+    "error": "Username must be between 4 to 15 characters and not be blank"
+  }
+]
+
+11:22:18.707 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:22:18.712 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 37
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"Testando","password":""}
+
+11:22:18.728 [main] DEBUG com.intuit.karate - response time in milliseconds: 15.42
+1 < 400
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:22:18 GMT
+1 < Transfer-Encoding: chunked
+[{"field":"password","error":"size must be between 4 and 15"},{"field":"password","error":"Password must be between 4 to 15 characters and not be blank"}]
+
+11:22:18.731 [main] INFO  com.intuit.karate - [print] [
+  {
+    "field": "password",
+    "error": "size must be between 4 and 15"
+  },
+  {
+    "field": "password",
+    "error": "Password must be between 4 to 15 characters and not be blank"
+  }
+]
+
+11:22:18.835 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:22:18.844 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158938840","password":"1234"}
+
+11:22:19.024 [main] DEBUG com.intuit.karate - response time in milliseconds: 177.48
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:22:18 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e46eb1800eb","username":"1637158938840","password":"$2a$10$.lk3upWXSDd5KqDWeVcHduIyviGCkLTidIPBbA9ZG.3o3offjZs8i","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+11:22:19.025 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$.lk3upWXSDd5KqDWeVcHduIyviGCkLTidIPBbA9ZG.3o3offjZs8i",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e46eb1800eb",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637158938840",
+  "accountNonLocked": true
+}
+
+11:22:19.030 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 46
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158938840","password":"1234"}
+
+11:22:19.169 [main] DEBUG com.intuit.karate - response time in milliseconds: 136.81
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 14:22:18 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmViMTgwMGViIiwiaWF0IjoxNjM3MTU4OTM5LCJleHAiOjE2MzcyNDUzMzl9.DEF-KGxjCsh6uVZRyJVt_D9aI0y1I9dhBu0mLVMogw8","type":"Bearer"}
+
+11:22:19.170 [main] INFO  com.intuit.karate - [print] {
+  "type": "Bearer",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmViMTgwMGViIiwiaWF0IjoxNjM3MTU4OTM5LCJleHAiOjE2MzcyNDUzMzl9.DEF-KGxjCsh6uVZRyJVt_D9aI0y1I9dhBu0mLVMogw8"
+}
+
+11:22:19.178 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:8081/wishlist
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmViMTgwMGViIiwiaWF0IjoxNjM3MTU4OTM5LCJleHAiOjE2MzcyNDUzMzl9.DEF-KGxjCsh6uVZRyJVt_D9aI0y1I9dhBu0mLVMogw8
+3 > Connection: Keep-Alive
+3 > Content-Length: 31
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:8081
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"name":"wishlist for testing"}
+
+11:22:19.257 [main] DEBUG com.intuit.karate - response time in milliseconds: 78.29
+3 < 201
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Connection: keep-alive
+3 < Content-Type: application/json
+3 < Date: Wed, 17 Nov 2021 14:22:18 GMT
+3 < Expires: 0
+3 < Keep-Alive: timeout=60
+3 < Location: http://localhost:8081/wishlist/2c9480837d2a8c08017d2e46ebfb00ec
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e46ebfb00ec","name":"wishlist for testing","books":[]}
+
+11:22:19.259 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+  ],
+  "name": "wishlist for testing",
+  "id": "2c9480837d2a8c08017d2e46ebfb00ec"
+}
+
+11:22:19.303 [main] INFO  com.intuit.karate - karate.env system property was:  
+11:22:19.311 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/signup
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 46
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158939307","password":"1234"}
+
+11:22:19.468 [main] DEBUG com.intuit.karate - response time in milliseconds: 154.87
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 17 Nov 2021 14:22:19 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e46ecd500ed","username":"1637158939307","password":"$2a$10$FMr0R4icMF/Sa3TsinsZiuu7yTN6xwTVnu7D0EQmdz1igULrxquiC","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}
+
+11:22:19.469 [main] INFO  com.intuit.karate - [print] {
+  "password": "$2a$10$FMr0R4icMF/Sa3TsinsZiuu7yTN6xwTVnu7D0EQmdz1igULrxquiC",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e46ecd500ed",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637158939307",
+  "accountNonLocked": true
+}
+
+11:22:19.475 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:8081/auth
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 46
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8081
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158939307","password":"1234"}
+
+11:22:19.622 [main] DEBUG com.intuit.karate - response time in milliseconds: 146.06
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Type: application/json
+2 < Date: Wed, 17 Nov 2021 14:22:19 GMT
+2 < Keep-Alive: timeout=60
+2 < Transfer-Encoding: chunked
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmVjZDUwMGVkIiwiaWF0IjoxNjM3MTU4OTQwLCJleHAiOjE2MzcyNDUzNDB9.iMGDDI4ymz2FTlT8e8swCtAj0t-zHsEZEwVWuG2739w","type":"Bearer"}
+
+11:22:19.625 [main] INFO  com.intuit.karate - [print] {
+  "type": "Bearer",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmVjZDUwMGVkIiwiaWF0IjoxNjM3MTU4OTQwLCJleHAiOjE2MzcyNDUzNDB9.iMGDDI4ymz2FTlT8e8swCtAj0t-zHsEZEwVWuG2739w"
+}
+
+11:22:19.630 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:8081/wishlist
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmVjZDUwMGVkIiwiaWF0IjoxNjM3MTU4OTQwLCJleHAiOjE2MzcyNDUzNDB9.iMGDDI4ymz2FTlT8e8swCtAj0t-zHsEZEwVWuG2739w
+3 > Connection: Keep-Alive
+3 > Content-Length: 27
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:8081
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"name":"wishlist to find"}
+
+11:22:19.692 [main] DEBUG com.intuit.karate - response time in milliseconds: 60.28
+3 < 201
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Connection: keep-alive
+3 < Content-Type: application/json
+3 < Date: Wed, 17 Nov 2021 14:22:19 GMT
+3 < Expires: 0
+3 < Keep-Alive: timeout=60
+3 < Location: http://localhost:8081/wishlist/2c9480837d2a8c08017d2e46edb100ee
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e46edb100ee","name":"wishlist to find","books":[]}
+
+11:22:19.693 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+  ],
+  "name": "wishlist to find",
+  "id": "2c9480837d2a8c08017d2e46edb100ee"
+}
+
+11:22:19.709 [main] DEBUG com.intuit.karate - request:
+4 > GET http://localhost:8081/wishlist/2c9480837d2a8c08017d2e46edb100ee
+4 > Accept-Encoding: gzip,deflate
+4 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmVjZDUwMGVkIiwiaWF0IjoxNjM3MTU4OTQwLCJleHAiOjE2MzcyNDUzNDB9.iMGDDI4ymz2FTlT8e8swCtAj0t-zHsEZEwVWuG2739w
+4 > Connection: Keep-Alive
+4 > Host: localhost:8081
+4 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+
+11:22:19.751 [main] DEBUG com.intuit.karate - response time in milliseconds: 40.32
+4 < 200
+4 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 < Connection: keep-alive
+4 < Content-Type: application/json
+4 < Date: Wed, 17 Nov 2021 14:22:19 GMT
+4 < Expires: 0
+4 < Keep-Alive: timeout=60
+4 < Pragma: no-cache
+4 < Transfer-Encoding: chunked
+4 < X-Content-Type-Options: nosniff
+4 < X-Frame-Options: DENY
+4 < X-XSS-Protection: 1; mode=block
+{"id":"2c9480837d2a8c08017d2e46edb100ee","name":"wishlist to find","books":[]}
+
+11:22:19.752 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+  ],
+  "name": "wishlist to find",
+  "id": "2c9480837d2a8c08017d2e46edb100ee"
+}
+

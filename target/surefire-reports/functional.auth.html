@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>functional.auth</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">2</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2021-11-17 11:22:15 AM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:21]">[1:21] Create user then log in </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[2:30]">[2:30] Dont log in with wrong password </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">functional/auth.feature</span><span class="feature-description">Create user and login</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:21]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:21]</span><span class="scenario-name">Create user then log in </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1418</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:21]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url 'http://localhost:8081'</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">11:22:13.145 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* header Content-Type = 'application/json'</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container" id="3">
+                            <div class="step-ref bg-step">3</div>
+                            <div class="step-cell passed">* header Accept = 'application/json'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container" id="4">
+                            <div class="step-ref bg-step">4</div>
+                            <div class="step-cell passed">* def now = function(){ return java.lang.System.currentTimeMillis() }</div>
+                        </div>
+                        <div class="time-cell passed">14</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container" id="5">
+                            <div class="step-ref bg-step">5</div>
+                            <div class="step-cell passed">* def timeNow = call now</div>
+                        </div>
+                        <div class="time-cell passed">35</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container" id="6">
+                            <div class="step-ref bg-step">6</div>
+                            <div class="step-cell passed">* def username = ("" + timeNow)</div>
+                        </div>
+                        <div class="time-cell passed">18</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container">
+                            <div class="step-ref bg-step"></div>
+                            <div class="step-cell comment">#creating user</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container" id="7">
+                            <div class="step-ref bg-step">7</div>
+                            <div class="step-cell passed">Given path 'signup'</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container" id="8">
+                            <div class="step-ref bg-step">8</div>
+                            <div class="step-cell passed">And request { "username":"#(username)", "password":"1234" }</div>
+                        </div>
+                        <div class="time-cell passed">13</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container" id="9">
+                            <div class="step-ref bg-step">9</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">1168</div>
+                    </div>
+                    <div class="preformatted" data-parent="9">11:22:14.374 request:
+1 &gt; POST http://localhost:8081/signup
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 46
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8081
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158933344","password":"1234"}
+
+11:22:14.559 response time in milliseconds: 182.26
+1 &lt; 201
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 17 Nov 2021 14:22:14 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e46d99800e5","username":"1637158933344","password":"$2a$10$8a388jbXcpi7fE7KecHXz.f61Q58ghQWjmn1DUzVYfYVhDYFdyGfa","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}</div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container" id="10">
+                            <div class="step-ref bg-step">10</div>
+                            <div class="step-cell passed">Then status 201</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container" id="11">
+                            <div class="step-ref bg-step">11</div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="11">11:22:14.561 [print] {
+  "password": "$2a$10$8a388jbXcpi7fE7KecHXz.f61Q58ghQWjmn1DUzVYfYVhDYFdyGfa",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e46d99800e5",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637158933344",
+  "accountNonLocked": true
+}</div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container" id="12">
+                            <div class="step-ref bg-step">12</div>
+                            <div class="step-cell passed">And match response.username == username</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:21]bg">
+                        <div class="step-container" id="13">
+                            <div class="step-ref bg-step">13</div>
+                            <div class="step-cell passed">And match response.password != "1234"</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-cell passed">Given path 'auth'</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-cell passed">And request { "username":"#(username)", "password":"1234" }</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">127</div>
+                    </div>
+                    <div class="preformatted" data-parent="16">11:22:14.577 request:
+2 &gt; POST http://localhost:8081/auth
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Length: 46
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Host: localhost:8081
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158933344","password":"1234"}
+
+11:22:14.701 response time in milliseconds: 122.42
+2 &lt; 200
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json
+2 &lt; Date: Wed, 17 Nov 2021 14:22:14 GMT
+2 &lt; Keep-Alive: timeout=60
+2 &lt; Transfer-Encoding: chunked
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmQ5OTgwMGU1IiwiaWF0IjoxNjM3MTU4OTM1LCJleHAiOjE2MzcyNDUzMzV9.iXLbSleF0Y4o8JoHWSof8hi7bhVHZOLbT4HPR86D1Gk","type":"Bearer"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref passed">17</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref passed">18</div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="18">11:22:14.703 [print] {
+  "type": "Bearer",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCb29rIFdpc2hsaXN0IEFQSSIsInN1YiI6IjJjOTQ4MDgzN2QyYThjMDgwMTdkMmU0NmQ5OTgwMGU1IiwiaWF0IjoxNjM3MTU4OTM1LCJleHAiOjE2MzcyNDUzMzV9.iXLbSleF0Y4o8JoHWSof8hi7bhVHZOLbT4HPR86D1Gk"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
+                            <div class="step-cell passed">And match response.type == "Bearer"</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="20">
+                            <div class="step-ref passed">20</div>
+                            <div class="step-cell passed">And match response.token == "#notnull"</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2:30]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [2:30]</span><span class="scenario-name">Dont log in with wrong password </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 259</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[2:30]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container" id="21">
+                            <div class="step-ref bg-step">21</div>
+                            <div class="step-cell passed">* url 'http://localhost:8081'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="21">11:22:14.743 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container" id="22">
+                            <div class="step-ref bg-step">22</div>
+                            <div class="step-cell passed">* header Content-Type = 'application/json'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container" id="23">
+                            <div class="step-ref bg-step">23</div>
+                            <div class="step-cell passed">* header Accept = 'application/json'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container" id="24">
+                            <div class="step-ref bg-step">24</div>
+                            <div class="step-cell passed">* def now = function(){ return java.lang.System.currentTimeMillis() }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container" id="25">
+                            <div class="step-ref bg-step">25</div>
+                            <div class="step-cell passed">* def timeNow = call now</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container" id="26">
+                            <div class="step-ref bg-step">26</div>
+                            <div class="step-cell passed">* def username = ("" + timeNow)</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container">
+                            <div class="step-ref bg-step"></div>
+                            <div class="step-cell comment">#creating user</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container" id="27">
+                            <div class="step-ref bg-step">27</div>
+                            <div class="step-cell passed">Given path 'signup'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container" id="28">
+                            <div class="step-ref bg-step">28</div>
+                            <div class="step-cell passed">And request { "username":"#(username)", "password":"1234" }</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container" id="29">
+                            <div class="step-ref bg-step">29</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">128</div>
+                    </div>
+                    <div class="preformatted" data-parent="29">11:22:14.760 request:
+1 &gt; POST http://localhost:8081/signup
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 46
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8081
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158934754","password":"1234"}
+
+11:22:14.885 response time in milliseconds: 124.27
+1 &lt; 201
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 17 Nov 2021 14:22:14 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Transfer-Encoding: chunked
+{"id":"2c9480837d2a8c08017d2e46daed00e6","username":"1637158934754","password":"$2a$10$DHoKjGY8ogIMjScGufjQ0uqFbGq.h0TrGukkP6D0KgLShG73vqzlG","profiles":null,"enabled":true,"authorities":null,"accountNonLocked":true,"credentialsNonExpired":true,"accountNonExpired":true}</div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container" id="30">
+                            <div class="step-ref bg-step">30</div>
+                            <div class="step-cell passed">Then status 201</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container" id="31">
+                            <div class="step-ref bg-step">31</div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="31">11:22:14.886 [print] {
+  "password": "$2a$10$DHoKjGY8ogIMjScGufjQ0uqFbGq.h0TrGukkP6D0KgLShG73vqzlG",
+  "credentialsNonExpired": true,
+  "profiles": null,
+  "accountNonExpired": true,
+  "id": "2c9480837d2a8c08017d2e46daed00e6",
+  "enabled": true,
+  "authorities": null,
+  "username": "1637158934754",
+  "accountNonLocked": true
+}</div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container" id="32">
+                            <div class="step-ref bg-step">32</div>
+                            <div class="step-cell passed">And match response.username == username</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:30]bg">
+                        <div class="step-container" id="33">
+                            <div class="step-ref bg-step">33</div>
+                            <div class="step-cell passed">And match response.password != "1234"</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="34">
+                            <div class="step-ref passed">34</div>
+                            <div class="step-cell passed">Given path 'auth'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="35">
+                            <div class="step-ref passed">35</div>
+                            <div class="step-cell passed">And request { "username":"#(username)", "password":"12345" }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="36">
+                            <div class="step-ref passed">36</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">116</div>
+                    </div>
+                    <div class="preformatted" data-parent="36">11:22:14.890 request:
+2 &gt; POST http://localhost:8081/auth
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Length: 47
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Host: localhost:8081
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.13)
+{"username":"1637158934754","password":"12345"}
+
+11:22:15.003 response time in milliseconds: 111.47
+2 &lt; 404
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json
+2 &lt; Date: Wed, 17 Nov 2021 14:22:14 GMT
+2 &lt; Keep-Alive: timeout=60
+2 &lt; Transfer-Encoding: chunked
+[{"field":"username or password","error":"Please check that both the username and password are typed correctly"}]</div>
+                    <div class="step-row">
+                        <div class="step-container" id="37">
+                            <div class="step-ref passed">37</div>
+                            <div class="step-cell passed">Then status 404</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="38">
+                            <div class="step-ref passed">38</div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="38">11:22:15.005 [print] [
+  {
+    "field": "username or password",
+    "error": "Please check that both the username and password are typed correctly"
+  }
+]</div>
+                    <div class="step-row">
+                        <div class="step-container" id="39">
+                            <div class="step-ref passed">39</div>
+                            <div class="step-cell passed">And match response contains { "field": "username or password", "error": "Please check that both the username and password are typed correctly" }</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>
